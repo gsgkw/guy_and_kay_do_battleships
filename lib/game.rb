@@ -1,4 +1,6 @@
 class Game
+  SHIP_ICON = "S"
+
   def initialize
     @board = [[".",".","."],[".",".","."],[".",".","."]]
   end
@@ -10,7 +12,9 @@ class Game
   end
 
   def place_ship(ship)
-    @board[ship.position[:y]][ship.position[:x]] = "S"
+    y = ship.position[:y]
+    x = ship.position[:x]
+    @board[y][x] = SHIP_ICON
   end
 
 end

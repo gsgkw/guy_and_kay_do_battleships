@@ -1,4 +1,4 @@
-require_relative '../lib/ship'
+require 'ship'
 
 RSpec.describe Ship do
   it "has a location" do

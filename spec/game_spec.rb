@@ -1,4 +1,4 @@
-require_relative '../lib/game'
+require 'game'
 
 RSpec.describe Game do
   it "outputs a board" do
